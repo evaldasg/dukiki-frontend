@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1484855774332" clover="3.2.0">
+  <project timestamp="1484855774333" name="All files">
+    <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="4" coveredelements="3" complexity="0" loc="4" ncloc="4" packages="1" files="2" classes="2">
+      <file name="Expenses.js" path="/home/evaldas/workspace/dukikik/js/Expenses.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="NavBar.js" path="/home/evaldas/workspace/dukikik/js/NavBar.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
