@@ -1,0 +1,70 @@
+{
+  "expenses_count": "5",
+  "expenses": [
+    {
+      "id": "1",
+      "type": "expense",
+      "date": "2017-01-19",
+      "amount": "12.2",
+      "source": "Maxima Varena 1",
+      "description": "Maisto prekes",
+      "category": {
+        "id": "1",
+        "name": "Food",
+        "description": "Food Category"
+      }
+    },
+    {
+      "id": "2",
+      "type": "expense",
+      "date": "2017-01-11",
+      "amount": "2.81",
+      "source": "Maxima Varena 1",
+      "description": "Maisto prekes",
+      "category": {
+        "id": "1",
+        "name": "Food",
+        "description": "Food Category"
+      }
+    },
+    {
+      "id": "3",
+      "type": "expense",
+      "date": "2017-01-16",
+      "amount": "13.74",
+      "source": "Maxima Varena 2",
+      "description": "Maisto prekes",
+      "category": {
+        "id": "1",
+        "name": "Food",
+        "description": "Food Category"
+      }
+    },
+    {
+      "id": "4",
+      "type": "expense",
+      "date": "2017-01-14",
+      "amount": "22.02",
+      "source": "Maxima Varena 1",
+      "description": "Maisto prekes",
+      "category": {
+        "id": "1",
+        "name": "Food",
+        "description": "Food Category"
+      }
+    },
+    {
+      "id": "5",
+      "type": "expense",
+      "date": "2017-01-15",
+      "amount": "25.72",
+      "source": "Maxima Varena 2",
+      "description": "Asmenines prekes",
+      "category": {
+        "id": "2",
+        "name": "Personal Items",
+        "description": "Personal Items Category"
+      }
+    }
+  ]
+}

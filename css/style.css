@@ -13,3 +13,11 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+table.highlight > tbody > tr:hover {
+  background-color: #bbdefb;
+}
+
+a.expenses-new {
+  margin: 1.1rem 0;
+}

@@ -15,7 +15,7 @@ const App = React.createClass({
           <Match exactly pattern='/' component={MainPage} />
           <Match exactly pattern='/profile' component={Profile} />
           <Match exactly pattern='/budgets' component={Budgets} />
-          <Match exactly pattern='/expenses' component={Expenses} />
+          <Match pattern='/expenses' component={Expenses} />
           <Match exactly pattern='/settings' component={Settings} />
         </div>
       </BrowserRouter>
