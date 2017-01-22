@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import NavBar from './NavBar'
 import payload from '../data/expenses'
 
@@ -24,9 +25,9 @@ const Expenses = React.createClass({
             </div>
             <div className='col s3'>
               <div className='expenses new-button'>
-                <a className='expenses-new waves-effect waves-light btn-large right light-blue darken-2'>
+                <Link to='/expenses_new' className='expenses-new waves-effect waves-light btn-large right light-blue darken-2'>
                   <i className='material-icons left'>add_circle</i>New
-                </a>
+                </Link>
               </div>
             </div>
           </div>

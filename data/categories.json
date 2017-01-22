@@ -1,0 +1,30 @@
+{
+  "categories_count": "5",
+  "categories": [
+    {
+      "id": "1",
+      "name": "Food",
+      "description": "Maisto prekes"
+    },
+    {
+      "id": "2",
+      "name": "Utilities",
+      "description": "Komunaliniai"
+    },
+    {
+      "id": "3",
+      "name": "Auto",
+      "description": "Automobilio islaidos"
+    },
+    {
+      "id": "4",
+      "name": "Medical",
+      "description": "Sveikatos/medicinos islaidos"
+    },
+    {
+      "id": "5",
+      "name": "Home",
+      "description": "Namu apyvokos prekes"
+    }
+  ]
+}
