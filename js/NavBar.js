@@ -8,6 +8,7 @@ var NavBar = React.createClass({
         <div className='nav-wrapper container'>
           <Link to='/' id='logo-container' className='brand-logo'>dukiki</Link>
           <ul className='right hide-on-med-and-down'>
+            <li><Link to='/categories'>Categories</Link></li>
             <li><Link to='/budgets'>Budgets</Link></li>
             <li><Link to='/expenses'>Expenses</Link></li>
             <li><Link to='/settings'>Settings</Link></li>
@@ -15,6 +16,7 @@ var NavBar = React.createClass({
           </ul>
 
           <ul id='nav-mobile' className='side-nav'>
+            <li><Link to='/categories'>Categories</Link></li>
             <li><Link to='/budgets'>Budgets</Link></li>
             <li><Link to='/expenses'>Expenses</Link></li>
             <li><Link to='/settings'>Settings</Link></li>
