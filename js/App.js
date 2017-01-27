@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Match } from 'react-router'
+import { Match } from 'react-router'
 import MainPage from './MainPage'
 import Settings from './Settings'
 import Profile from './Profile'
