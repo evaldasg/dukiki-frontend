@@ -1,14 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router'
-import NavBar from './NavBar'
+import { Link } from 'react-router-dom'
 import payload from '../data/expenses'
 
-const Expenses = React.createClass({
+class Expenses extends React.Component {
   sortPayload (prop) {
     return payload.expenses.sort((first, second) => {
       return new Date(second[prop]) - new Date(first[prop])
     })
-  },
+  }
 
   render () {
     console.log(this.props)
@@ -17,7 +16,6 @@ const Expenses = React.createClass({
 
     return (
       <div>
-        <NavBar />
         <div className='container'>
           <div className='row'>
             <div className='col s9'>
@@ -59,6 +57,6 @@ const Expenses = React.createClass({
       </div>
     )
   }
-})
+}
 
 export default Expenses

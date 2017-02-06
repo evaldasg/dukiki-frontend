@@ -1,60 +1,31 @@
 const path = require('path')
-const webpack = require('webpack')
 
-module.exports = {
-  context: __dirname,
-  entry: './js/App.js',
-  devtool: 'eval',
-  output: {
-    path: path.join(__dirname, '/public'),
-    filename: 'bundle.js'
-  },
-  devServer: {
-    publicPath: '/public/',
-    historyApiFallback: true
-  },
-  resolve: {
-    extensions: ['.js', '.json']
-  },
-  stats: {
-    colors: true,
-    reasons: true,
-    chunks: true
-  },
-  module: {
-    rules: [
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
-      },
-      {
-        include: path.resolve(__dirname, 'js'),
-        test: /\.js$/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              url: false
-            }
-          }
-        ]
-      }
-    ]
-  },
-  plugins:[
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    })
-  ]
+module.exports = (env) => {
+  return {
+    context: __dirname,
+    entry: './js/DukikiApp.js',
+    output: {
+      path: path.join(__dirname, '/public/js'),
+      filename: 'bundle.js',
+      publicPath: '/public/',
+      // pathinfo: !env.prod
+    },
+    devtool: env.prod ? 'source-map' : 'eval',
+    resolve: {
+      extensions: ['.js', '.json']
+    },
+    module: {
+      rules: [
+        {
+          test: /\.json$/,
+          loaders: ['json-loader']
+        },
+        {
+          include: path.resolve(__dirname, 'js'),
+          test: /\.js$/,
+          loaders: ['babel-loader']
+        }
+      ]
+    }
+  }
 }
